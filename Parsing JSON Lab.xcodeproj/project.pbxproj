@@ -17,6 +17,9 @@
 		0867C8402315B1A500761263 /* WeatherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0867C83F2315B1A500761263 /* WeatherTableViewController.swift */; };
 		0867C8422315B1B500761263 /* ColorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0867C8412315B1B500761263 /* ColorTableViewController.swift */; };
 		0867C8442315B1C400761263 /* RandomUserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0867C8432315B1C400761263 /* RandomUserTableViewController.swift */; };
+		0867C84B2315B6F500761263 /* Color.json in Resources */ = {isa = PBXBuildFile; fileRef = 0867C8482315B6F500761263 /* Color.json */; };
+		0867C84C2315B6F500761263 /* Weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 0867C8492315B6F500761263 /* Weather.json */; };
+		0867C84D2315B6F500761263 /* RandomUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 0867C84A2315B6F500761263 /* RandomUser.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		0867C83F2315B1A500761263 /* WeatherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewController.swift; sourceTree = "<group>"; };
 		0867C8412315B1B500761263 /* ColorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableViewController.swift; sourceTree = "<group>"; };
 		0867C8432315B1C400761263 /* RandomUserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserTableViewController.swift; sourceTree = "<group>"; };
+		0867C8482315B6F500761263 /* Color.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Color.json; path = "Parsing JSON Lab/New Group/Color.json"; sourceTree = SOURCE_ROOT; };
+		0867C8492315B6F500761263 /* Weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Weather.json; path = "Parsing JSON Lab/New Group/Weather.json"; sourceTree = SOURCE_ROOT; };
+		0867C84A2315B6F500761263 /* RandomUser.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = RandomUser.json; path = "Parsing JSON Lab/New Group/RandomUser.json"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,9 @@
 			children = (
 				0867C83D2315AD3400761263 /* TabBarController.swift */,
 				0867C8132315A89900761263 /* Main.storyboard */,
+				0867C8482315B6F500761263 /* Color.json */,
+				0867C84A2315B6F500761263 /* RandomUser.json */,
+				0867C8492315B6F500761263 /* Weather.json */,
 				0867C8452315B1CE00761263 /* View Controllers */,
 				0867C8162315A89A00761263 /* Assets.xcassets */,
 				0867C8182315A89A00761263 /* LaunchScreen.storyboard */,
@@ -247,8 +256,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0867C81A2315A89A00761263 /* LaunchScreen.storyboard in Resources */,
+				0867C84B2315B6F500761263 /* Color.json in Resources */,
 				0867C8172315A89A00761263 /* Assets.xcassets in Resources */,
+				0867C84D2315B6F500761263 /* RandomUser.json in Resources */,
 				0867C8152315A89900761263 /* Main.storyboard in Resources */,
+				0867C84C2315B6F500761263 /* Weather.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
