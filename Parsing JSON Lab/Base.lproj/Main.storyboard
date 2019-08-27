@@ -29,11 +29,11 @@
             </objects>
             <point key="canvasLocation" x="-74" y="1112"/>
         </scene>
-        <!--Item 2-->
+        <!--Color Navigation Controller-->
         <scene sceneID="rEU-st-k2R">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w2N-uY-z3X" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="gan-AI-VYY"/>
+                <navigationController title="Color Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="w2N-uY-z3X" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Color" id="gan-AI-VYY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RGz-ow-RW7">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="1192.753623188406" y="1111.6071428571429"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Color Table View Controller-->
         <scene sceneID="WwF-Zg-NJQ">
             <objects>
-                <tableViewController id="kp9-rX-ph4" sceneMemberID="viewController">
+                <tableViewController id="kp9-rX-ph4" customClass="ColorTableViewController" customModule="Parsing_JSON_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="pZK-om-gOJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,7 +84,7 @@
         <scene sceneID="cj8-s4-PXA">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0nM-f1-UOx" userLabel="Weather" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Pp0-6D-MUb"/>
+                    <tabBarItem key="tabBarItem" title="Weather" id="Pp0-6D-MUb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ftd-jN-kfd">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -99,11 +99,11 @@
             </objects>
             <point key="canvasLocation" x="1192.753623188406" y="399.77678571428572"/>
         </scene>
-        <!--Item-->
+        <!--Random Users Navigation Controller-->
         <scene sceneID="cgL-dL-x1V">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qWB-ae-aXq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Tuw-tx-7Zc"/>
+                <navigationController title="Random Users Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="qWB-ae-aXq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="User" id="Tuw-tx-7Zc"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hlL-oY-5mY">
@@ -119,21 +119,37 @@
             </objects>
             <point key="canvasLocation" x="1193" y="1860"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Random User Table View Controller-->
         <scene sceneID="BpD-Cq-3NB">
             <objects>
-                <tableViewController id="AZv-yu-wyx" sceneMemberID="viewController">
+                <tableViewController id="AZv-yu-wyx" customClass="RandomUserTableViewController" customModule="Parsing_JSON_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="C3v-GZ-eXJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" id="bh7-Uz-0yK">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" textLabel="vY4-OZ-doa" detailTextLabel="d6s-5r-7K8" style="IBUITableViewCellStyleSubtitle" id="bh7-Uz-0yK">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bh7-Uz-0yK" id="eeA-8M-qMI">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vY4-OZ-doa">
+                                            <rect key="frame" x="20" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d6s-5r-7K8">
+                                            <rect key="frame" x="20" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="7aa-BV-L1Z" kind="show" id="Mi8-bI-bbI"/>
@@ -151,10 +167,10 @@
             </objects>
             <point key="canvasLocation" x="1993" y="1860"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Weather Table View Controller-->
         <scene sceneID="X0x-eZ-eQY">
             <objects>
-                <tableViewController id="ih7-wr-8DI" sceneMemberID="viewController">
+                <tableViewController title="Weather Table View Controller" id="ih7-wr-8DI" customClass="WeatherTableViewController" customModule="Parsing_JSON_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="03g-m2-lkH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
