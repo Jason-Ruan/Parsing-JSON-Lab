@@ -30,7 +30,7 @@ class RandomUserTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let user = randomUsers[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath)
-        cell.textLabel?.text = "\(user.name.title) \(user.name.first) \(user.name.last)"
+        cell.textLabel?.text = "\(user.name.first.capitalized) \(user.name.last.capitalized)"
         cell.detailTextLabel?.text = user.email
         return cell
     }
