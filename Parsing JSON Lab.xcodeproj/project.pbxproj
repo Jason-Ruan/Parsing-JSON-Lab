@@ -14,6 +14,9 @@
 		0867C8252315A89B00761263 /* Parsing_JSON_LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0867C8242315A89B00761263 /* Parsing_JSON_LabTests.swift */; };
 		0867C8302315A89B00761263 /* Parsing_JSON_LabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0867C82F2315A89B00761263 /* Parsing_JSON_LabUITests.swift */; };
 		0867C83E2315AD3400761263 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0867C83D2315AD3400761263 /* TabBarController.swift */; };
+		0867C8402315B1A500761263 /* WeatherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0867C83F2315B1A500761263 /* WeatherTableViewController.swift */; };
+		0867C8422315B1B500761263 /* ColorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0867C8412315B1B500761263 /* ColorTableViewController.swift */; };
+		0867C8442315B1C400761263 /* RandomUserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0867C8432315B1C400761263 /* RandomUserTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		0867C82F2315A89B00761263 /* Parsing_JSON_LabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing_JSON_LabUITests.swift; sourceTree = "<group>"; };
 		0867C8312315A89B00761263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0867C83D2315AD3400761263 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		0867C83F2315B1A500761263 /* WeatherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewController.swift; sourceTree = "<group>"; };
+		0867C8412315B1B500761263 /* ColorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableViewController.swift; sourceTree = "<group>"; };
+		0867C8432315B1C400761263 /* RandomUserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +103,12 @@
 		0867C80E2315A89900761263 /* Parsing JSON Lab */ = {
 			isa = PBXGroup;
 			children = (
-				0867C80F2315A89900761263 /* AppDelegate.swift */,
 				0867C83D2315AD3400761263 /* TabBarController.swift */,
 				0867C8132315A89900761263 /* Main.storyboard */,
+				0867C8452315B1CE00761263 /* View Controllers */,
 				0867C8162315A89A00761263 /* Assets.xcassets */,
 				0867C8182315A89A00761263 /* LaunchScreen.storyboard */,
+				0867C80F2315A89900761263 /* AppDelegate.swift */,
 				0867C81B2315A89A00761263 /* Info.plist */,
 			);
 			path = "Parsing JSON Lab";
@@ -123,6 +130,16 @@
 				0867C8312315A89B00761263 /* Info.plist */,
 			);
 			path = "Parsing JSON LabUITests";
+			sourceTree = "<group>";
+		};
+		0867C8452315B1CE00761263 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0867C83F2315B1A500761263 /* WeatherTableViewController.swift */,
+				0867C8412315B1B500761263 /* ColorTableViewController.swift */,
+				0867C8432315B1C400761263 /* RandomUserTableViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +274,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0867C8102315A89900761263 /* AppDelegate.swift in Sources */,
+				0867C8402315B1A500761263 /* WeatherTableViewController.swift in Sources */,
+				0867C8442315B1C400761263 /* RandomUserTableViewController.swift in Sources */,
 				0867C83E2315AD3400761263 /* TabBarController.swift in Sources */,
+				0867C8422315B1B500761263 /* ColorTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
