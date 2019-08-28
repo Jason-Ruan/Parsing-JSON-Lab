@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0811BA492315FE42007B87B2 /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0811BA482315FE42007B87B2 /* WeatherDetailViewController.swift */; };
+		0811BA4B2315FE4E007B87B2 /* Color DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0811BA4A2315FE4E007B87B2 /* Color DetailViewController.swift */; };
+		0811BA4D2315FE59007B87B2 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0811BA4C2315FE59007B87B2 /* UserDetailViewController.swift */; };
 		0867C8102315A89900761263 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0867C80F2315A89900761263 /* AppDelegate.swift */; };
 		0867C8152315A89900761263 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0867C8132315A89900761263 /* Main.storyboard */; };
 		0867C8172315A89A00761263 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0867C8162315A89A00761263 /* Assets.xcassets */; };
@@ -44,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0811BA482315FE42007B87B2 /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
+		0811BA4A2315FE4E007B87B2 /* Color DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color DetailViewController.swift"; sourceTree = "<group>"; };
+		0811BA4C2315FE59007B87B2 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		0867C80C2315A89900761263 /* Parsing JSON Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parsing JSON Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0867C80F2315A89900761263 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0867C8142315A89900761263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -157,6 +163,9 @@
 				0867C83F2315B1A500761263 /* WeatherTableViewController.swift */,
 				0867C8412315B1B500761263 /* ColorTableViewController.swift */,
 				0867C8432315B1C400761263 /* RandomUserTableViewController.swift */,
+				0811BA482315FE42007B87B2 /* WeatherDetailViewController.swift */,
+				0811BA4A2315FE4E007B87B2 /* Color DetailViewController.swift */,
+				0811BA4C2315FE59007B87B2 /* UserDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -307,12 +316,15 @@
 			files = (
 				0867C8102315A89900761263 /* AppDelegate.swift in Sources */,
 				0867C8402315B1A500761263 /* WeatherTableViewController.swift in Sources */,
+				0811BA4D2315FE59007B87B2 /* UserDetailViewController.swift in Sources */,
 				0867C8442315B1C400761263 /* RandomUserTableViewController.swift in Sources */,
 				0867C8542315B89F00761263 /* ColorModel.swift in Sources */,
 				0867C83E2315AD3400761263 /* TabBarController.swift in Sources */,
 				0867C8522315B89200761263 /* RandomUserModel.swift in Sources */,
 				0867C8562315B8D300761263 /* JSONDecodingError.swift in Sources */,
+				0811BA4B2315FE4E007B87B2 /* Color DetailViewController.swift in Sources */,
 				0867C8502315B88300761263 /* WeatherModel.swift in Sources */,
+				0811BA492315FE42007B87B2 /* WeatherDetailViewController.swift in Sources */,
 				0867C8422315B1B500761263 /* ColorTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

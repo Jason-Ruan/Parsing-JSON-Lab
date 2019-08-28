@@ -11,26 +11,27 @@ import UIKit
 class WeatherTableViewController: UITableViewController {
     
     var cities = [Weather]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadWeatherData()
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cities.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let city = cities[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath)
         cell.textLabel?.text = city.name
+        cell.detailTextLabel?.text = "\(city.main.temp)\u{00B0}C"
         return cell
     }
     
@@ -46,6 +47,12 @@ class WeatherTableViewController: UITableViewController {
         } catch {
             fatalError("Could not get data from json file")
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let weatherVC = segue.destination as? WeatherDetailViewController else { fatalError("Could not access detail view controller") }
+        let selectedRow = self.tableView.indexPathForSelectedRow
+        weatherVC.cityWeatherInfo = cities[selectedRow!.row]
     }
     
 }
