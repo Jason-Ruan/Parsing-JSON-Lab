@@ -284,17 +284,50 @@
         <!--Color Detail View Controller-->
         <scene sceneID="Zk2-6r-68z">
             <objects>
-                <viewController id="fEV-4S-32i" customClass="Color_DetailViewController" customModule="Parsing_JSON_Lab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fEV-4S-32i" customClass="ColorDetailViewController" customModule="Parsing_JSON_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PLP-9M-85n">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPb-yc-gLs">
+                                <rect key="frame" x="118" y="144" width="178" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hex: Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uj6-6O-AAl">
+                                <rect key="frame" x="127.5" y="271" width="159" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RGB: Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9UD-YV-C08">
+                                <rect key="frame" x="123.5" y="371" width="167.5" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aPb-yc-gLs" firstAttribute="top" secondItem="daE-j9-fql" secondAttribute="top" constant="56" id="DfP-91-7I8"/>
+                            <constraint firstItem="uj6-6O-AAl" firstAttribute="centerX" secondItem="daE-j9-fql" secondAttribute="centerX" id="F3k-Fe-Th6"/>
+                            <constraint firstItem="uj6-6O-AAl" firstAttribute="top" secondItem="aPb-yc-gLs" secondAttribute="bottom" constant="85" id="J6U-8S-yOW"/>
+                            <constraint firstItem="9UD-YV-C08" firstAttribute="top" secondItem="uj6-6O-AAl" secondAttribute="bottom" constant="58" id="esO-yX-gw8"/>
+                            <constraint firstItem="9UD-YV-C08" firstAttribute="centerX" secondItem="daE-j9-fql" secondAttribute="centerX" id="lVh-C0-tKn"/>
+                            <constraint firstItem="aPb-yc-gLs" firstAttribute="centerX" secondItem="daE-j9-fql" secondAttribute="centerX" id="m74-o7-622"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="daE-j9-fql"/>
                     </view>
+                    <connections>
+                        <outlet property="colorName" destination="aPb-yc-gLs" id="WPv-4f-w1v"/>
+                        <outlet property="hexValueLabel" destination="uj6-6O-AAl" id="MfM-ka-4Cc"/>
+                        <outlet property="rgbValueLabel" destination="9UD-YV-C08" id="5ai-MX-C47"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mv4-Fa-usj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2803" y="1112"/>
+            <point key="canvasLocation" x="2802.898550724638" y="1111.6071428571429"/>
         </scene>
     </scenes>
 </document>
