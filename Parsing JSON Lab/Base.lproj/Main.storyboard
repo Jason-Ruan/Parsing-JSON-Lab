@@ -273,13 +273,93 @@
                     <view key="view" contentMode="scaleToFill" id="PbD-Pj-wlr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaB-iE-IrT">
+                                <rect key="frame" x="20" y="137" width="374" height="91.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypb-NJ-bPW">
+                                <rect key="frame" x="20" y="236.5" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jV-O6-A1x">
+                                <rect key="frame" x="20" y="265" width="374" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="gFO-Xo-UUv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City, State" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NV-zJ-xbF">
+                                <rect key="frame" x="20" y="329" width="374" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="7Ih-oz-RPf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rg3-m3-FUO">
+                                <rect key="frame" x="20" y="388" width="374" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="vzZ-qf-wwm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41b-eF-98v">
+                                <rect key="frame" x="20" y="452" width="374" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="oki-Ba-49x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7kM-NW-OJr" firstAttribute="trailing" secondItem="0jV-O6-A1x" secondAttribute="trailing" constant="20" id="6sc-pv-tEB"/>
+                            <constraint firstItem="4NV-zJ-xbF" firstAttribute="trailing" secondItem="Rg3-m3-FUO" secondAttribute="trailing" id="7K7-YV-m1P"/>
+                            <constraint firstItem="Rg3-m3-FUO" firstAttribute="top" secondItem="0jV-O6-A1x" secondAttribute="bottom" constant="67" id="7N6-N8-IDZ"/>
+                            <constraint firstItem="0jV-O6-A1x" firstAttribute="top" secondItem="ypb-NJ-bPW" secondAttribute="bottom" constant="8" symbolic="YES" id="AnP-TE-rmN"/>
+                            <constraint firstItem="7kM-NW-OJr" firstAttribute="trailing" secondItem="Rg3-m3-FUO" secondAttribute="trailing" constant="20" id="CKI-DO-PqH"/>
+                            <constraint firstItem="4NV-zJ-xbF" firstAttribute="top" secondItem="0jV-O6-A1x" secondAttribute="bottom" constant="8" symbolic="YES" id="HnC-2Y-KmO"/>
+                            <constraint firstItem="41b-eF-98v" firstAttribute="top" secondItem="Rg3-m3-FUO" secondAttribute="bottom" constant="8" id="JbZ-QU-fjt"/>
+                            <constraint firstItem="AaB-iE-IrT" firstAttribute="top" secondItem="7kM-NW-OJr" secondAttribute="top" constant="49" id="K3A-hj-zvh"/>
+                            <constraint firstItem="ypb-NJ-bPW" firstAttribute="leading" secondItem="7kM-NW-OJr" secondAttribute="leading" constant="20" id="Rnv-OT-aIH"/>
+                            <constraint firstItem="ypb-NJ-bPW" firstAttribute="top" secondItem="AaB-iE-IrT" secondAttribute="bottom" constant="8" id="Rrc-nV-7yY"/>
+                            <constraint firstItem="Rg3-m3-FUO" firstAttribute="leading" secondItem="7kM-NW-OJr" secondAttribute="leading" constant="20" id="U1S-Tt-0kb"/>
+                            <constraint firstItem="7kM-NW-OJr" firstAttribute="trailing" secondItem="ypb-NJ-bPW" secondAttribute="trailing" constant="20" id="XH0-N0-7qN"/>
+                            <constraint firstItem="7kM-NW-OJr" firstAttribute="trailing" secondItem="41b-eF-98v" secondAttribute="trailing" constant="20" id="XHP-2a-43i"/>
+                            <constraint firstItem="41b-eF-98v" firstAttribute="leading" secondItem="7kM-NW-OJr" secondAttribute="leading" constant="20" id="bLJ-gz-clE"/>
+                            <constraint firstItem="AaB-iE-IrT" firstAttribute="leading" secondItem="7kM-NW-OJr" secondAttribute="leading" constant="20" id="foz-hV-k9y"/>
+                            <constraint firstItem="0jV-O6-A1x" firstAttribute="leading" secondItem="7kM-NW-OJr" secondAttribute="leading" constant="20" id="gPg-aK-Iwg"/>
+                            <constraint firstItem="4NV-zJ-xbF" firstAttribute="leading" secondItem="Rg3-m3-FUO" secondAttribute="leading" id="jRV-uj-KgP"/>
+                            <constraint firstItem="7kM-NW-OJr" firstAttribute="bottom" secondItem="41b-eF-98v" secondAttribute="bottom" constant="305" id="mxu-m0-b3G"/>
+                            <constraint firstItem="0jV-O6-A1x" firstAttribute="top" secondItem="ypb-NJ-bPW" secondAttribute="bottom" constant="8" id="yYv-Ab-hka"/>
+                            <constraint firstItem="7kM-NW-OJr" firstAttribute="trailing" secondItem="AaB-iE-IrT" secondAttribute="trailing" constant="20" id="yv0-wk-TCE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7kM-NW-OJr"/>
                     </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="0jV-O6-A1x" id="IMU-RC-4hI"/>
+                        <outlet property="cityStateLabel" destination="4NV-zJ-xbF" id="PfZ-vL-DYM"/>
+                        <outlet property="dobLabel" destination="41b-eF-98v" id="8OX-ch-O0b"/>
+                        <outlet property="emailLabel" destination="ypb-NJ-bPW" id="0VA-ay-36h"/>
+                        <outlet property="phoneLabel" destination="Rg3-m3-FUO" id="oh5-sE-Nkc"/>
+                        <outlet property="userName" destination="AaB-iE-IrT" id="PWJ-rz-dsz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kgR-pO-4dZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2803" y="1860"/>
+            <point key="canvasLocation" x="2802.898550724638" y="1859.5982142857142"/>
         </scene>
         <!--Color Detail View Controller-->
         <scene sceneID="Zk2-6r-68z">

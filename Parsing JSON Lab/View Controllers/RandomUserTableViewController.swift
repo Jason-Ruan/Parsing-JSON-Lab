@@ -48,4 +48,10 @@ class RandomUserTableViewController: UITableViewController {
             fatalError("Could not get data from json file")
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let userVC = segue.destination as? UserDetailViewController else { fatalError("Could not access detail view controller") }
+        let selectedRow = self.tableView.indexPathForSelectedRow
+        userVC.user = randomUsers[selectedRow!.row]
+    }
 }
